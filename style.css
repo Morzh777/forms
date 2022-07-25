@@ -1,0 +1,113 @@
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+.wrapper-one{
+	padding: 20px;
+	max-width: 970px;
+	margin: 20px auto;
+	border: 2px solid #3F5E72;
+}
+
+.form-one__group-one{
+max-width: 970px;
+min-height: 230px;
+border: 2px solid #EBEAED;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+
+
+.control {
+	display: flex;
+	flex-direction: column;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  position: relative;
+  display: block;
+  padding-left: 102px;
+	margin-top: 50px;
+	
+}
+
+.checkbox-checkmark {
+  position: absolute;
+  left: 64px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #FFFFFF;
+	border: 2px solid #EBEAED;
+	border-radius: 50%;
+}
+.checkbox-title{
+  display: block;
+  width: 118px;
+	margin-bottom: 7px;
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	color: #1E0E62;
+
+}
+.checkbox-subtitle{
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: #a1a1b0;
+}
+.control-input[type="radio"]:checked+.checkbox-checkmark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+.control-title{
+	display: block;
+	width: 118px;
+	}
+.control-input[type="radio"]:not(:checked):focus+.checkbox-checkmark {
+  border: 4px solid #83B3D3;
+  background: rgba(255, 255, 255, 0.6);
+
+}
+
+.control-input[type="radio"]:checked:focus+.checkbox-checkmark {
+  outline: 4px solid #83B3D3;
+  background: rgba(255, 255, 255, 0.6);
+
+}
+.mailing-form__wrapper{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.mailing-form{
+	width: 370px;
+	height: 50px;
+	padding-left: 24px;
+	display: block;
+	border: 2px solid #EBEAED;
+	border-radius: 100px;
+}
+.mailing-form__button{
+	margin-right: 70px;
+}
